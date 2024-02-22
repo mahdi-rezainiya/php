@@ -56,12 +56,54 @@
     // echo intval($flag);
 
     // indexed arrays
-    $peopleOne = ['mahdi' , 'ali' , 'hamed']
+    $peopleOne = ['mahdi' , 'ali' , 'hamed'];
+    $peopleTwo = array('mahdi' , 'ali' , 'omid');
+
+    // echo $peopleOne[0];
+
+    $numbers = [1 , 2 , 3 , 4];
+    // echo $numbers;
+    // print_r($numbers)
+
+    $stuff = ['mahdi' , 8 , true];
+    // print_r($stuff)
+    // $stuff[] = 'atefe';
+    // or
+    array_push($stuff , 'atefe');
+    $stuff[1] = 1;
+
+    // print_r($stuff)
+
+    // merge
+
+    $mixed = array_merge($stuff , $numbers);
+
+    $name = array_pop($stuff) ;
+    // echo $name;
+
+    // print_r($mixed);
+
+        // count
+    // echo count($stuff);
 
     //associative arrays (key and value pairs)
+    $teamOne = ['blue' => 'Esteghlal' , 'red' => 'teraktor' , 'yellow' => 'sepahan'];
+    $teamTwo = array('orange' => 'foolad');
 
+    // echo $teamOne['blue'];
 
     // multi-dimensional arrays
+    $books = [
+        ['book' => 'boof koor' , 'author' => 'sadegh hedayat'],
+        ['book' => 'kelidar' , 'author' => 'mahmoud dowlatabadi'], 
+        ['book' => 'souvashoun' , 'author' => 'simin daneshvar']
+    ];
+    // echo $books[1][1];
+    echo $books[1]['author'];
+
+
+
+
 
 ?>
 
