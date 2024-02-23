@@ -1,27 +1,21 @@
 <?php
-
     // $name = "mahdi";
     // echo $name;
-    // define('NAME' , 'mahdi');
+    define('NAME' , 'maryam');
+    $age = 28 ;
+    $job = "accounter";
+    // echo NAME , " " ,$age , " " ,$job;
+    // NAME = "mahsa";
     // echo NAME;
+    $f_name = "Mahdi ";
+    $l_name = "Rezainiya";
+    // echo $f_name.$l_name;
+    // echo "hi ".$f_name.$l_name. " How are you ? are you fine ?"
+    // echo "Hi $f_name $l_name";
+    // echo strlen($f_name.$l_name);
+    // echo strtolower($f_name);
+    // echo strtoupper($l_name);
 
-    // NAME = 'ali';
-    // echo NAME;
-
-    // define('NAME' , 'ali');
-    // echo NAME;
-    // string
-    $firstName = "mahdi";
-    $lastName = "rezainiya";
-    // echo $firstName.$lastName;
-    // echo "Hi ".$firstName;
-    
-    // echo 'Hi $firstName';
-    // echo "Hi $firstName $lastName";
-
-    // echo strlen($firstName);
-    // echo strtolower($firstName);
-    // echo strtoupper($firstName);
 
     // echo str_replace('m' , 'n' , $firstName);
 
@@ -56,29 +50,29 @@
     // echo intval($flag);
 
     // indexed arrays
-    $peopleOne = ['mahdi' , 'ali' , 'hamed'];
-    $peopleTwo = array('mahdi' , 'ali' , 'omid');
+    // $peopleOne = ['mahdi' , 'ali' , 'hamed'];
+    // $peopleTwo = array('mahdi' , 'ali' , 'omid');
 
     // echo $peopleOne[0];
 
-    $numbers = [1 , 2 , 3 , 4];
+    // $numbers = [1 , 2 , 3 , 4];
     // echo $numbers;
     // print_r($numbers)
 
-    $stuff = ['mahdi' , 8 , true];
+    // $stuff = ['mahdi' , 8 , true];
     // print_r($stuff)
     // $stuff[] = 'atefe';
     // or
-    array_push($stuff , 'atefe');
-    $stuff[1] = 1;
+    // array_push($stuff , 'atefe');
+    // $stuff[1] = 1;
 
     // print_r($stuff)
 
     // merge
 
-    $mixed = array_merge($stuff , $numbers);
+    // $mixed = array_merge($stuff , $numbers);
 
-    $name = array_pop($stuff) ;
+    // $name = array_pop($stuff) ;
     // echo $name;
 
     // print_r($mixed);
@@ -87,19 +81,19 @@
     // echo count($stuff);
 
     //associative arrays (key and value pairs)
-    $teamOne = ['blue' => 'Esteghlal' , 'red' => 'teraktor' , 'yellow' => 'sepahan'];
-    $teamTwo = array('orange' => 'foolad');
+    // $teamOne = ['blue' => 'Esteghlal' , 'red' => 'teraktor' , 'yellow' => 'sepahan'];
+    // $teamTwo = array('orange' => 'foolad');
 
     // echo $teamOne['blue'];
 
     // multi-dimensional arrays
-    $books = [
-        ['book' => 'boof koor' , 'author' => 'sadegh hedayat'],
-        ['book' => 'kelidar' , 'author' => 'mahmoud dowlatabadi'], 
-        ['book' => 'souvashoun' , 'author' => 'simin daneshvar']
-    ];
+    // $books = [
+    //     ['book' => 'boof koor' , 'author' => 'sadegh hedayat'],
+    //     ['book' => 'kelidar' , 'author' => 'mahmoud dowlatabadi'], 
+    //     ['book' => 'souvashoun' , 'author' => 'simin daneshvar']
+    // ];
     // echo $books[1][1];
-    echo $books[1]['author'];
+    // echo $books[1]['author'];
 
 
 
