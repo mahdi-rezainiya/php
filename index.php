@@ -1,127 +1,80 @@
 <?php
     // $name = "mahdi";
-    // echo $name;
     define('NAME' , 'maryam');
     $age = 28 ;
     $job = "accounter";
-    // echo NAME , " " ,$age , " " ,$job;
     // NAME = "mahsa";
-    // echo NAME;
     $f_name = "Mahdi ";
     $l_name = "Rezainiya";
-    // echo $f_name.$l_name;
-    // echo "hi ".$f_name.$l_name. " How are you ? are you fine ?"
     // echo "Hi $f_name $l_name";
     // echo strlen($f_name.$l_name);
     // echo strtolower($f_name);
     // echo strtoupper($l_name);
-
-
-    // echo str_replace('m' , 'n' , $firstName);
+    // echo str_replace('M' , 'n' , $f_name);
 
     // number
-
-    // $age = 25 ;
-    // $rate = 4.3;
-    // echo $age;
-    // echo $rate;
-
-    // echo 2 + 4 * 3;
-    // echo (2 + 4 )* 3;
-
-    // $age = $age + 1 ;
-    // echo $age ;
-
+    $age = 22 ; //integer
+    $rate = 4.5 ; //float
+    // $age = $age + 1;
     // $age ++;
-    // echo $age ;
-
-    // $age = $age + 21 ;
-    // echo $age ;
-
-    // $age += 21 ;
-    // echo $age ;
-
+    // $age += $rate ;
     // echo floor($rate);
     // echo ceil($rate);
-
+    // echo round($rate) ;
+    
     // boolean
-    // $flag = true ;
-    // $flag = false ;
-    // echo intval($flag);
+    $male = true ;
+    $female = false ;
+    // echo $male;
+    // echo $female;
+    // echo intval($female);
 
-    // indexed arrays
-    // $peopleOne = ['mahdi' , 'ali' , 'hamed'];
-    // $peopleTwo = array('mahdi' , 'ali' , 'omid');
-
+    // array
+    // indexed array
+    $peopleOne = ["mahdi" , "ali" , "hamed" , "hasan" , "saeed" , "hossein"];
+    $peopleTwo = array("maryam" , "mahsa" , "zahra" , "fatemeh" , "nika" , "kosar");
+    $numberOne = [4 , 7.8 , 9.1 , 14.2 , 75.3];
+    $numberTwo = array(7.1 , 8.54 , 6 , 42.3);
+    // print_r($numberTwo);
     // echo $peopleOne[0];
-
-    // $numbers = [1 , 2 , 3 , 4];
-    // echo $numbers;
-    // print_r($numbers)
-
-    // $stuff = ['mahdi' , 8 , true];
-    // print_r($stuff)
-    // $stuff[] = 'atefe';
-    // or
-    // array_push($stuff , 'atefe');
-    // $stuff[1] = 1;
-
-    // print_r($stuff)
-
+    $stuff1 = ["mahdi"  , 8 , true];
+    $stuff2 = ["ali" , 10 , false];
+    $stuff1[] = 'single';
+    array_push($stuff1 , "student");
+    $stuff1[1] = 5;
+    $stuff2[1] = 6 ;
+    $stuff2[0] = "ali ansari";
+    $stuff2[] = 'married';
+    array_push($stuff2 , 'student');
+    $stuff1[0] = "mahdi rezainiya";
+    
     // merge
-
-    // $mixed = array_merge($stuff , $numbers);
-
-    // $name = array_pop($stuff) ;
-    // echo $name;
-
+    $mixed = array_merge($peopleOne , $peopleTwo);
+    // array_pop($mixed);
+    // array_pop($mixed);
     // print_r($mixed);
-
-        // count
-    // echo count($stuff);
+    // echo count($mixed);
 
     //associative arrays (key and value pairs)
-    // $teamOne = ['blue' => 'Esteghlal' , 'red' => 'teraktor' , 'yellow' => 'sepahan'];
-    // $teamTwo = array('orange' => 'foolad');
+    $fruitOne = ['red' => 'apples' , 'blue' => 'blueberries' , 'orange' => 'orange' , 'yellow' => 'banana' , 'black' => 'black cherries' , 'pink' => 'pomegranate'];
 
-    // echo $teamOne['blue'];
+    // echo $fruitOne;
+    // echo $fruitOne[1];
+    // print_r($fruitOne);
 
     // multi-dimensional arrays
-    // $books = [
-    //     ['book' => 'boof koor' , 'author' => 'sadegh hedayat'],
-    //     ['book' => 'kelidar' , 'author' => 'mahmoud dowlatabadi'], 
-    //     ['book' => 'souvashoun' , 'author' => 'simin daneshvar']
-    // ];
-    // echo $books[1][1];
-    // echo $books[1]['author'];
+    $person = [
+        [
+            'id' => 21478555 , 'first-name' => 'ali' , 'last-name' => 'ansari' , 'age' => 20
+        ],
+        [
+            'single' => true , 'student' => true ,
+            'happy' => true , 'continue' => true
+        ],
+        [
+            'country' => 'iran' , 'city' => 'tabriz' , 'nationality' => 'ariaism'
+        ]
+    ];
 
-
-
-
-
+    // print_r($person);
 ?>
-
-
-<!-- <!DOCTYPE html> -->
-<!-- <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My PHP Project</title>
-</head>
-<body> -->
-
-<?php
-    // echo "Hello World!";
-?>
-
-<!-- <br> -->
-
-<!-- <button> -->
-    <?php
-        // echo "click me";
-    ?>
-<!-- </button> -->
-
-<!-- </body>
-</html> -->
