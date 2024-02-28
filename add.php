@@ -8,15 +8,28 @@
 	// 	echo '<br>';
 	// }
 
-	if(isset($_POST['submit'])){
+	// Email validation
+	if(empty($_POST['email'])){
+		echo 'Email Required <br>';
+	} else{
 		echo htmlspecialchars($_POST['email']);
-		echo '<br>';		
+		echo '<br>';
+	}
+	// Title validation
+	if(empty($_POST['title'])){
+		echo 'Title Required <br>';
+	} else{
 		echo htmlspecialchars($_POST['title']);
 		echo '<br>';
-		echo htmlspecialchars($_POST['ingredients']);
-		echo '<br>';		
 	}
-	// echo "hi mahdi";
+	// Ingredients validation
+	if(empty($_POST['ingredients'])){
+		echo 'Ingredients Required <br>';
+	} else{
+		echo htmlspecialchars($_POST['ingredients']);
+		echo '<br>';
+	}
+	
 	// <script>window.location = "https://google.com"</script>
 
 	//  & (ampersand) becomes &amp;
