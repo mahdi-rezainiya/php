@@ -1,22 +1,64 @@
 <?php 
-	// if(isset($_POST['submit'])){
+	if(isset($_POST['submit'])){
 	// 	echo htmlspecialchars($_POST['email']);
 	// 	echo '<br>';
 	// 	echo htmlspecialchars($_POST['title']);
 	// 	echo '<br>';
 	// 	echo htmlspecialchars($_POST['ingredients']);
 	// 	echo '<br>';
-	// }
+	
 
-	if(isset($_POST['submit'])){
-		echo htmlspecialchars($_POST['email']);
-		echo '<br>';		
-		echo htmlspecialchars($_POST['title']);
-		echo '<br>';
-		echo htmlspecialchars($_POST['ingredients']);
-		echo '<br>';		
+	// Email validation
+	// if(empty($_POST['email'])){
+	// 	echo 'Email Required <br>';
+	// } else{
+	// 	echo htmlspecialchars($_POST['email']);
+	// 	echo '<br>';
+	// }
+	// // Title validation
+	// if(empty($_POST['title'])){
+	// 	echo 'Title Required <br>';
+	// } else{
+	// 	echo htmlspecialchars($_POST['title']);
+	// 	echo '<br>';
+	// }
+	// // Ingredients validation
+	// if(empty($_POST['ingredients'])){
+	// 	echo 'Ingredients Required <br>';
+	// } else{
+	// 	echo htmlspecialchars($_POST['ingredients']);
+	// 	echo '<br>';
+	// }
+	
+	if(empty($_POST['email'])){
+		echo 'Email Required <br>';
+	} else{
+		$email = $_POST['email'];
+		if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+			echo 'Email is not Valid <br>';
+		}
+		// echo '<br>';
 	}
-	// echo "hi mahdi";
+	// Title validation
+	if(empty($_POST['title'])){
+		echo 'Title Required <br>';
+	} else{
+		$title = $_POST['title'];
+		if(!preg_match('/^[a-zA-Z\s]+$/',$title)){
+			echo 'Title must be letters and spaces only<br>';
+		}
+	}
+	// Ingredients validation
+	if(empty($_POST['ingredients'])){
+		echo 'Ingredients Required <br>';
+	} else{
+		$ingredients = $_POST['ingredients'];
+		if(!preg_match('/^[a-zA-Z\s]+(,\s?[a-zA-Z\s]*)*$/' , $ingredients)){
+			echo 'Ingredients should Separated by Comma <br>';
+		}
+	}
+	// this end is for isset
+}	
 	// <script>window.location = "https://google.com"</script>
 
 	//  & (ampersand) becomes &amp;
