@@ -9,7 +9,6 @@
 	
 
 	// Email validation
-<<<<<<< HEAD
 	// if(empty($_POST['email'])){
 	// 	echo 'Email Required <br>';
 	// } else{
@@ -49,26 +48,10 @@
 			echo 'Title must be letters and spaces only<br>';
 		}
 	}
-=======
-	if(empty($_POST['email'])){
-		echo 'Email Required <br>';
-	} else{
-		echo htmlspecialchars($_POST['email']);
-		echo '<br>';
-	}
-	// Title validation
-	if(empty($_POST['title'])){
-		echo 'Title Required <br>';
-	} else{
-		echo htmlspecialchars($_POST['title']);
-		echo '<br>';
-	}
->>>>>>> 354961b0ee0b20ca4949436b079d9fac4c5406d1
 	// Ingredients validation
 	if(empty($_POST['ingredients'])){
 		echo 'Ingredients Required <br>';
 	} else{
-<<<<<<< HEAD
 		$ingredients = $_POST['ingredients'];
 		if(!preg_match('/^[a-zA-Z\s]+(,\s?[a-zA-Z\s]*)*$/' , $ingredients)){
 			echo 'Ingredients should Separated by Comma <br>';
@@ -76,12 +59,6 @@
 	}
 	// this end is for isset
 }	
-=======
-		echo htmlspecialchars($_POST['ingredients']);
-		echo '<br>';
-	}
-	
->>>>>>> 354961b0ee0b20ca4949436b079d9fac4c5406d1
 	// <script>window.location = "https://google.com"</script>
 
 	//  & (ampersand) becomes &amp;
@@ -89,7 +66,6 @@
 	//  ' (single quote) becomes &#039;
 	//  < (less than) becomes &lt;
 	//  > (greater than) becomes &gt;
-
 
 	// &lt;script&gt;window.location = &quot;https://google.com&quot;&lt;/script&gt;
 ?>
