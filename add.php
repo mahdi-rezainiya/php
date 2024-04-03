@@ -1,13 +1,38 @@
 <?php 
-	// if(isset($_POST['submit'])){
-	// 	echo htmlspecialchars($_POST['email']);
-	// 	echo '<br>';
-	// 	echo htmlspecialchars($_POST['title']);
-	// 	echo '<br>';
-	// 	echo htmlspecialchars($_POST['ingredients']);
-	// 	echo '<br>';
+
+	if(isset($_POST['submit'])){
+		// Email Validation
+		if(empty($_POST['email'])){
+			echo 'Email Required';
+			echo '<br>';
+		}else{
+			echo htmlspecialchars($_POST['email']);
+			echo '<br>';
+		}
+		// Title Validation
+		if(empty($_POST['title'])){
+			echo 'Title Required';
+			echo '<br>';
+		}else{
+			echo htmlspecialchars($_POST['title']);
+			echo '<br>';
+		}
+		// Ingredients Validation
+		if(empty($_POST['ingredients'])){
+			echo 'Ingredients Required';
+			echo '<br>';
+		}else{
+			echo htmlspecialchars($_POST['ingredients']);
+			echo '<br>';
+		}
+	}
+
 	
 
+
+
+
+	
 	// Email validation
 	// if(empty($_POST['email'])){
 	// 	echo 'Email Required <br>';
@@ -57,18 +82,9 @@
 // 			echo 'Ingredients should Separated by Comma <br>';
 // 		}
 // 	}
-// }	
+// }
 
 
-	// <script>window.location = "https://google.com"</script>
-
-	//  & (ampersand) becomes &amp;
-	//  " (double quote) becomes &quot;
-	//  ' (single quote) becomes &#039;
-	//  < (less than) becomes &lt;
-	//  > (greater than) becomes &gt;
-
-	// &lt;script&gt;window.location = &quot;https://google.com&quot;&lt;/script&gt;
 ?>
 
 <!DOCTYPE html>
@@ -78,7 +94,7 @@
 
 	<section class="container grey-text">
 		<h4 class="center">Add a Pizza</h4>
-		<form class="white" action="index.php" method="GET">
+		<form class="white" action="index.php" method="POST">
 			<label for="email">Your Email</label>
 			<input type="text" id="email" name="email">
 			<label for="title">Pizza Title</label>
@@ -94,3 +110,7 @@
 	<?php include('templates/footer.php');?>
 
 </html>
+
+
+
+
